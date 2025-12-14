@@ -1,0 +1,89 @@
+/* SECTION */
+.contact-section {
+  margin-top: 120px;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  color: #eaf8ff;
+}
+
+/* CARD */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  padding: 40px 50px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* TITLE */
+.contact-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #bff3ff;
+}
+
+/* TEXT */
+.contact-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #d9f4ff;
+}
+
+/* EMAIL */
+.contact-email {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #9de8ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-email:hover {
+  color: #ffffff;
+}
+
+/* SOCIAL LINKS */
+.contact-socials {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-link {
+  color: #8fdfff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  color: #ffffff;
+}
+
+/* CTA BUTTON */
+.contact-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 14px 28px;
+  background: #11dfff;
+  color: #00151e;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #0ab5cf;
+}
