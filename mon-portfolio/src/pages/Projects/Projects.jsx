@@ -5,20 +5,25 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio Moderne",
-      description: "Site personnel futuriste avec animations 3D et interface hautement responsive."
+      title: "Portfolio Personnel",
+      description:
+        "Portfolio personnel développé avec React.js pour présenter mes projets et compétences.",
+      github: "https://github.com/ichrakdev-design/mon-portfolio",
+      live: "https://ichrakdev-design.github.io/mon-portfolio/"
     },
     {
-      title: "Application E-Commerce",
-      description: "Design moderne, gestion du panier, pages produits et interactions fluides."
+      title: "DonDeal – Frontend",
+      description:
+        "Application web de vente et de dons développée avec React.js. Interface moderne et responsive.",
+      github: "https://github.com/ichrakdev-design/final-frontend",
+      live: ""
     },
     {
-      title: "Dashboard Admin",
-      description: "Statistiques en temps réel, graphiques, interface intuitive et composants dynamiques."
-    },
-    {
-      title: "Clone Netflix",
-      description: "Interface immersive, carousels animés, API de films et responsive design."
+      title: "DonDeal – Backend",
+      description:
+        "API REST développée avec Node.js, Express et MongoDB. Gestion des utilisateurs, annonces et dashboard admin.",
+      github: "https://github.com/ichrakdev-design/final-backend",
+      live: ""
     }
   ];
 
@@ -44,6 +49,26 @@ const Projects = () => {
           >
             <h3>{project.title}</h3>
             <p>{project.description}</p>
+
+            <div className="project-links">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                🔗 GitHub
+              </a>
+
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  🌍 Live
+                </a>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>

@@ -3,8 +3,9 @@ import NetworkBackground from "./components/NetworkBackground/NetworkBackground"
 import Navbar from "./layout/Navbar/Navbar";
 
 import Home from "./pages/Home/Home";
-import Projects from "./pages/Projects/Projects";
 import About from "./pages/About/About";
+import Skills from "./pages/Skills/Skills";  // Section compétences
+import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 
 import "./App.css";
@@ -16,8 +17,9 @@ const App = () => {
       <Navbar />
 
       <Home />
-      <Projects />
       <About />
+      <Skills />      {/* Section Skills visible */}
+      <Projects />
       <Contact />
     </>
   );

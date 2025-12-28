@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 
 const roles = [
-  "Développeur Front-End",
-  "Spécialiste React.js",
-  "UI/UX Designer",
-  "Créateur d'expériences web"
+  "Développeuse Web Junior",
+  "Spécialisée React.js",
+  "Étudiante en Réseaux & Télécommunications",
+  "Créatrice de projets web"
 ];
 
 const Home = () => {
@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <section id="home" className="hero-container">
       <div className="hero-content">
-        <h1 className="hero-title">Bienvenue dans mon univers</h1>
+        <h1 className="hero-title">Bienvenue sur mon portfolio</h1>
 
         <h2 className="hero-role">
           {text}
@@ -47,7 +47,8 @@ const Home = () => {
         </h2>
 
         <p className="hero-subtitle">
-          Création d’interfaces modernes, fluides et réactives avec un style futuriste.
+          Je développe des interfaces web modernes avec React.js et renforce
+          mes compétences à travers des projets concrets, du frontend au backend.
         </p>
 
         <div className="hero-buttons">

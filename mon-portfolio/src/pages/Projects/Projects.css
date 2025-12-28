@@ -57,6 +57,24 @@
   line-height: 1.5;
 }
 
+/* === Liens GitHub / Live === */
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-links a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
 /* === Glow pulsant === */
 @keyframes glowPulse {
   0% {

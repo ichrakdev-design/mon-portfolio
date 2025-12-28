@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import "./About.css";
 
 const timelineData = [
-  { year: "2021", event: "Début en développement web" },
-  { year: "2022", event: "Maîtrise de React.js" },
-  { year: "2023", event: "Création de projets personnels futuristes" },
-  { year: "2024", event: "Portfolio ultra pro en développement" },
+  { year: "2024", event: "Études universitaires en réseaux et télécommunications" },
+  { year: "2024–2025", event: "Module développement web : HTML, CSS et bases JavaScript" },
+  { year: "2025", event: "Formation intensive Frontend chez BrainerX (1 mois)" },
+  { year: "2025", event: "Réalisation de projets Frontend et projet complet DonDeal (Frontend + Backend)" },
 ];
 
 const About = () => {
@@ -39,24 +39,26 @@ const About = () => {
       <div className="about-content">
         {/* Image Profil */}
         <div className="profile-img">
-          <img src="/profil.jpeg" alt="Profile" />
+          <img src="./profil.jpeg" alt="Ichrak - Développeuse Web Junior" />
         </div>
 
         {/* Texte de présentation */}
         <div className="about-text">
           <p>
-            Bonjour ! Je suis Ichrak, passionnée par le développement web et la création
-            d’interfaces modernes et réactives. J’aime concevoir des expériences utilisateur
-            fluides et futuristes tout en respectant les meilleures pratiques du web.
+            Bonjour, je suis Ichrak, diplômée en réseaux et télécommunications,
+            avec un fort intérêt pour le développement web et les technologies modernes.
           </p>
+
           <p>
-            Mon expertise couvre React.js, HTML, CSS, JavaScript, ainsi que la conception
-            UI/UX. Je crée des projets personnels et professionnels qui allient esthétique,
-            performance et interactivité.
+            Durant mon parcours universitaire, j’ai étudié les bases du développement web
+            (HTML, CSS et JavaScript). En 2025, j’ai renforcé mes compétences grâce à
+            une formation intensive Frontend chez BrainerX.
           </p>
+
           <p>
-            Je suis toujours à la recherche de nouvelles opportunités pour apprendre,
-            collaborer et développer des projets innovants dans le domaine du web.
+            J’ai réalisé plusieurs projets Frontend ainsi qu’un projet complet nommé
+            DonDeal, intégrant Frontend en React.js et Backend avec Node.js, Express et MongoDB.
+            Je souhaite continuer à apprendre et à développer des projets innovants.
           </p>
         </div>
 

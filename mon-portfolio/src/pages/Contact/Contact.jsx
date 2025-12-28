@@ -5,7 +5,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <section className="contact-section" id="contact">
-      <motion.div 
+      <motion.div
         className="contact-card"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,17 +17,40 @@ const Contact = () => {
           Si vous souhaitez collaborer, discuter d’un projet ou juste dire bonjour :
         </p>
 
-        <a href="mailto:exemple@gmail.com" className="contact-email">
-          📧 exemple@gmail.com
+        <a href="mailto:ichrakebb@gmail.com" className="contact-email">
+          📧 ichrakebb@gmail.com
         </a>
 
         <div className="contact-socials">
-          <a href="#" className="social-link">LinkedIn</a>
-          <a href="#" className="social-link">GitHub</a>
-          <a href="#" className="social-link">Portfolio</a>
+          <a
+            href="https://github.com/ichrakdev-design"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ichrak-djebri-a84aa639b/"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://ichrakdev-design.github.io/mon-portfolio/"
+            target="_blank"
+            rel="noreferrer"
+            className="social-link"
+          >
+            Portfolio
+          </a>
         </div>
 
-        <a href="mailto:exemple@gmail.com" className="contact-btn">
+        <a href="mailto:ichrakdev@gmail.com" className="contact-btn">
           Me contacter
         </a>
       </motion.div>

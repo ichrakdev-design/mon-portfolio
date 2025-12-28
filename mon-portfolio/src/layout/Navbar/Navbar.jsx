@@ -8,39 +8,60 @@ const Navbar = () => {
     const section = document.querySelector(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setOpen(false);
+      setOpen(false); // ferme le menu mobile
     }
   };
 
   return (
     <nav className="navbar">
+      {/* Logo */}
       <div className="nav-logo">
         <span className="logo-highlight">Ichrak</span>Dev
       </div>
 
+      {/* Menu desktop */}
       <div className="nav-center">
         <ul className="nav-links">
-          <li onClick={() => scrollToSection("#home")}>Accueil</li>
-          <li onClick={() => scrollToSection("#projects")}>Projets</li>
-          <li onClick={() => scrollToSection("#about")}>À propos</li>
-          <li onClick={() => scrollToSection("#contact")}>Contact</li>
+          <li>
+            <a href="#home" onClick={() => scrollToSection("#home")}>Accueil</a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => scrollToSection("#skills")}>Compétences</a> {/* <-- ajouté */}
+          </li>
+          <li>
+            <a href="#projects" onClick={() => scrollToSection("#projects")}>Projets</a>
+          </li>
+          <li>
+            <a href="#about" onClick={() => scrollToSection("#about")}>À propos</a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => scrollToSection("#contact")}>Contact</a>
+          </li>
         </ul>
       </div>
 
+      {/* Burger mobile */}
       <div
         className={`burger ${open ? "active" : ""}`}
         onClick={() => setOpen(!open)}
+        aria-label="Menu"
+        aria-expanded={open}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && setOpen(!open)}
       >
         <span></span>
         <span></span>
         <span></span>
       </div>
 
+      {/* Menu mobile */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
-        <p onClick={() => scrollToSection("#home")}>Accueil</p>
-        <p onClick={() => scrollToSection("#projects")}>Projets</p>
-        <p onClick={() => scrollToSection("#about")}>À propos</p>
-        <p onClick={() => scrollToSection("#contact")}>Contact</p>
+        <a href="#home" onClick={() => scrollToSection("#home")}>Accueil</a>
+        <a href="#skills" onClick={() => scrollToSection("#skills")}>Compétences</a> {/* <-- ajouté */}
+        <a href="#projects" onClick={() => scrollToSection("#projects")}>Projets</a>
+        <a href="#about" onClick={() => scrollToSection("#about")}>À propos</a>
+        <a href="#contact" onClick={() => scrollToSection("#contact")}>Contact</a>
       </div>
     </nav>
   );
